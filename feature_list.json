@@ -1,0 +1,60 @@
+{
+  "milestones": {
+    "M1": {
+      "name": "Core Dashboard (MVP)",
+      "features": {
+        "F01": { "name": "Repo cards grid", "status": "pending" },
+        "F02": { "name": "Language filter tabs", "status": "pending" },
+        "F03": { "name": "Daily/Weekly/Monthly toggle", "status": "pending" },
+        "F04": { "name": "Sort by stars", "status": "pending" },
+        "F05": { "name": "Formatted star counts", "status": "pending" },
+        "F10": { "name": "Responsive mobile-first layout", "status": "pending" },
+        "F14": { "name": "Repo link opens in new tab", "status": "pending" },
+        "S07": { "name": "Semantic HTML", "status": "pending" }
+      }
+    },
+    "M2": {
+      "name": "Enhanced Cards & Caching",
+      "features": {
+        "F06": { "name": "Owner avatars", "status": "pending" },
+        "F07": { "name": "Star history sparklines", "status": "pending" },
+        "F08": { "name": "Topic/tag badges", "status": "pending" },
+        "F09": { "name": "Pagination", "status": "pending" },
+        "F11": { "name": "API rate limit handling", "status": "pending" },
+        "F12": { "name": "Last updated timestamp", "status": "pending" }
+      }
+    },
+    "M3": {
+      "name": "SEO, Ads & Analytics",
+      "features": {
+        "S01": { "name": "Meta tags", "status": "pending" },
+        "S02": { "name": "Open Graph tags", "status": "pending" },
+        "S03": { "name": "Twitter Card tags", "status": "pending" },
+        "S04": { "name": "JSON-LD structured data", "status": "pending" },
+        "S05": { "name": "sitemap.xml", "status": "pending" },
+        "S06": { "name": "robots.txt", "status": "pending" },
+        "S08": { "name": "Canonical URL", "status": "pending" },
+        "A01": { "name": "Adsterra ad placeholders", "status": "pending" },
+        "A02": { "name": "Adsterra ad injection", "status": "pending" },
+        "A04": { "name": "Visitor counter", "status": "pending" },
+        "A05": { "name": "Google Sheets webhook", "status": "pending" },
+        "F13": { "name": "Additional language filters", "status": "pending" }
+      }
+    },
+    "M4": {
+      "name": "i18n, Pages & Polish",
+      "features": {
+        "I01": { "name": "Auto i18n detection", "status": "pending" },
+        "I02": { "name": "8+ language support", "status": "pending" },
+        "I03": { "name": "Language selector", "status": "pending" },
+        "I04": { "name": "Social sharing buttons", "status": "pending" },
+        "I05": { "name": "Feedback email link", "status": "pending" },
+        "A03": { "name": "Google AdSense fallback", "status": "pending" },
+        "P01": { "name": "About page", "status": "pending" },
+        "P02": { "name": "FAQ page", "status": "pending" },
+        "P03": { "name": "Privacy Policy page", "status": "pending" },
+        "P04": { "name": "Terms of Service page", "status": "pending" }
+      }
+    }
+  }
+}

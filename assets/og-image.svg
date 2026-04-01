@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="1200" height="4" fill="#2563EB"/>
+  <text x="600" y="250" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="72" fill="#1E293B">GitTrend Tracker</text>
+  <text x="600" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-weight="400" font-size="36" fill="#64748B">Daily Trending GitHub Repositories</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Inter, sans-serif" font-weight="500" font-size="28" fill="#2563EB">Python | JavaScript | TypeScript | Rust | Go</text>
+  <text x="600" y="520" text-anchor="middle" font-family="Inter, sans-serif" font-weight="400" font-size="24" fill="#94A3B8">gittrend-tracker.vercel.app</text>
+</svg>

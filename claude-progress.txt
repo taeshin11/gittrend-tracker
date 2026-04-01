@@ -1,0 +1,37 @@
+GitTrend Tracker - Build Progress
+==================================
+
+Current Milestone: M1
+Current Feature: F01
+
+M1: Core Dashboard (MVP)
+  [ ] F01 - Repo cards grid
+  [ ] F02 - Language filter tabs
+  [ ] F03 - Daily/Weekly/Monthly toggle
+  [ ] F04 - Sort by stars
+  [ ] F05 - Formatted star counts
+  [ ] F10 - Responsive mobile-first layout
+  [ ] F14 - Repo link opens in new tab
+  [ ] S07 - Semantic HTML
+
+M2: Enhanced Cards & Caching
+  [ ] F06 - Owner avatars
+  [ ] F07 - Star history sparklines
+  [ ] F08 - Topic/tag badges
+  [ ] F09 - Pagination
+  [ ] F11 - API rate limit handling
+  [ ] F12 - Last updated timestamp
+
+M3: SEO, Ads & Analytics
+  [ ] S01-S06, S08 - SEO tags
+  [ ] A01-A02 - Adsterra ads
+  [ ] A04 - Visitor counter
+  [ ] A05 - Google Sheets webhook
+  [ ] F13 - Additional language filters
+
+M4: i18n, Pages & Polish
+  [ ] I01-I03 - i18n
+  [ ] I04 - Social sharing
+  [ ] I05 - Feedback email
+  [ ] A03 - AdSense fallback
+  [ ] P01-P04 - Static pages
