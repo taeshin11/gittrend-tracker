@@ -5,9 +5,18 @@ let currentLang = 'en';
 let translations = {};
 
 async function initI18n() {
-  const userLang = navigator.language || (navigator.languages && navigator.languages[0]) || 'en';
-  const saved = localStorage.getItem('gtt_lang');
-  currentLang = saved || SUPPORTED_LANGS.find(l => userLang.startsWith(l)) || 'en';
+  // 1. URL ?lang= param takes highest priority
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlLang = urlParams.get('lang');
+  if (urlLang && SUPPORTED_LANGS.includes(urlLang)) {
+    currentLang = urlLang;
+  } else {
+    // 2. LocalStorage saved preference
+    const saved = localStorage.getItem('gtt_lang');
+    // 3. Browser language auto-detection
+    const userLang = navigator.language || (navigator.languages && navigator.languages[0]) || 'en';
+    currentLang = saved || SUPPORTED_LANGS.find(l => userLang.startsWith(l)) || 'en';
+  }
 
   try {
     const resp = await fetch('data/translations.json');

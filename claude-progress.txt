@@ -48,6 +48,16 @@ M4: i18n, Pages & Polish - COMPLETE
   [x] P03 - Privacy Policy page
   [x] P04 - Terms of Service page
 
+M5: SEO Boost, PWA & Feedback (2026-04-02) - COMPLETE
+  [x] PWA manifest.json with theme/icons
+  [x] <link rel="manifest"> in index.html
+  [x] Floating feedback widget (bottom-right FAB + modal + mailto)
+  [x] i18n keys for feedback widget in all 8 languages
+  [x] Hreflang SEO tags for all 8 languages
+  [x] Preconnect/dns-prefetch hints for api.github.com, avatars.githubusercontent.com
+  [x] ?lang= URL param support in initI18n()
+  [x] sitemap.xml lastmod updated to 2026-04-02
+
 Deployment:
   [x] GitHub repo: https://github.com/taeshin11/gittrend-tracker
   [x] Vercel: https://gittrend-tracker.vercel.app
