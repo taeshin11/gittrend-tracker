@@ -3,18 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ - GitTrend Tracker</title>
-  <meta name="description" content="Frequently asked questions about GitTrend Tracker - how to use the trending GitHub repositories dashboard.">
+  <title>FAQ - GitTrend Tracker | GitHub Trending Repositories Questions Answered</title>
+  <meta name="description" content="Frequently asked questions about GitTrend Tracker: how GitHub trending works, language filters, star counts, update frequency, mobile use, privacy, and how to use trending data for learning.">
+  <meta name="keywords" content="GitTrend Tracker FAQ, GitHub trending how it works, trending repos questions, filter by language GitHub, star count meaning, GitHub API rate limit, open source discovery FAQ">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://gittrend-tracker.vercel.app/faq.html">
-  <meta property="og:title" content="FAQ - GitTrend Tracker">
-  <meta property="og:description" content="Frequently asked questions about GitTrend Tracker.">
+  <meta property="og:title" content="FAQ - GitTrend Tracker | GitHub Trending Repositories Questions Answered">
+  <meta property="og:description" content="Everything you need to know about GitTrend Tracker, GitHub trending repos, language filters, star counts, and how to use trending data effectively.">
   <meta property="og:url" content="https://gittrend-tracker.vercel.app/faq.html">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GitTrend Tracker">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7098271335538021" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does GitHub trending work on GitTrend Tracker?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GitTrend Tracker uses the GitHub REST API to search for repositories that have been actively pushed and are accumulating the most stars within the selected time window (daily, weekly, or monthly). Repositories are ranked by star acquisition rate, not total stars, so genuinely rising projects are surfaced rather than established repositories that have been popular for years. This mirrors how developers discover exciting new projects organically on GitHub."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What programming languages can I filter by?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GitTrend Tracker supports filtering by Python, JavaScript, TypeScript, Rust, Go, Java, C++, Ruby, PHP, Swift, Kotlin, and an All Languages option. Clicking a language tab instantly refreshes the repository list to show only repos where that language is the primary language. This makes it easy to stay current within your specific technology stack without wading through unrelated results."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Daily, Weekly, and Monthly trending?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Daily trending shows repositories with the most star activity in the past 24 hours — perfect for catching new releases and viral projects. Weekly trending aggregates seven days of activity, revealing projects with sustained momentum. Monthly trending shows repositories that have built strong traction over 30 days and are likely entering broader mainstream adoption. For discovery purposes, daily is best for breaking news in tech, while weekly and monthly are better for evaluating whether a project has real staying power."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does the star count on a repository mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A GitHub star is a developer's way of bookmarking or expressing appreciation for a repository. High star counts indicate a large number of developers have found a project valuable, trustworthy, or interesting enough to bookmark. Star count alone does not measure code quality or maintenance activity, but repositories with rapidly growing star counts tend to represent projects that are solving real problems in novel ways. GitTrend Tracker shows both the total star count and a sparkline of recent growth to help you distinguish between long-established popular projects and newly emerging ones."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often is the data updated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GitTrend Tracker fetches data from the GitHub API in real time each time you visit or change a filter. To stay within GitHub's API rate limits and ensure fast load times, results are cached locally in your browser: daily trending data is cached for 30 minutes, weekly data for 1 hour, and monthly data for 2 hours. After the cache expires, fresh data is automatically fetched on your next interaction. A status bar at the top of the dashboard displays the last updated timestamp."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I use trending repository data for learning and skill development?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Trending repositories are excellent learning resources for several reasons. Highly-starred projects tend to have good documentation, clear code organization, and active issue trackers where beginners can ask questions. Trending projects in your language of interest show you what idiomatic, modern code looks like in practice. Reading and understanding the code of trending projects exposes you to patterns, libraries, and approaches that are currently valued by experienced developers. You can also contribute to trending projects to build your portfolio with work that is visible to a large audience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do I sometimes see a rate limit warning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The GitHub public API limits unauthenticated requests to 60 per hour per IP address. If you or other users on the same network have made many requests in a short period, you may see a rate limit warning indicating that cached data is being served. This is normal behavior and will resolve automatically. GitTrend Tracker's caching system is specifically designed to minimize API calls and prevent rate limit issues during normal use. If you encounter rate limits frequently, simply wait a few minutes for your rate limit window to reset."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do the sparkline charts on each repository card show?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The small line chart (sparkline) displayed on each repository card represents the repository's star growth trajectory over a recent period. A steeply rising sparkline suggests the repository has recently experienced rapid growth in community interest, often triggered by a notable release, viral social media post, or press coverage. A flat or gently sloping sparkline indicates steady but less explosive growth. A decline may indicate that peak interest has passed. Use sparklines alongside star count and description to form a complete picture of a repository's momentum."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is GitTrend Tracker available on mobile devices?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, GitTrend Tracker is fully responsive and works seamlessly on smartphones, tablets, and desktop computers. The card grid adapts from three columns on wide screens to two columns on tablets and one column on mobile phones. Language filter tabs are horizontally scrollable on smaller screens to keep the interface clean. All touch interactions — tapping filter tabs, scrolling through results, and clicking through to GitHub — work naturally on touchscreen devices. No app download is needed; visit gittrend-tracker.vercel.app from any modern mobile browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is GitTrend Tracker free? Are there any limitations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GitTrend Tracker is completely free to use with no registration, no subscription, and no hidden fees. All features including language filters, time range toggles, sparkline charts, multi-language interface, and load more pagination are available to every visitor at no cost. The only operational constraint is GitHub's API rate limit, which applies to all unauthenticated users and is handled transparently by the platform's caching system. The service is supported by advertising from Google AdSense and Adsterra."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="min-h-screen flex flex-col">
   <header class="site-header">
@@ -29,53 +122,61 @@
   </header>
 
   <main class="flex-grow max-w-4xl mx-auto px-4 py-10 w-full">
-    <h1 class="text-3xl font-bold text-gray-800 mb-8">Frequently Asked Questions</h1>
+    <h1 class="text-3xl font-bold text-gray-800 mb-2">Frequently Asked Questions</h1>
+    <p class="text-gray-500 text-sm mb-8">Everything you need to know about GitTrend Tracker, GitHub trending repositories, and how to use trending data for development and learning.</p>
 
-    <div class="space-y-6">
-      <details class="bg-white rounded-lg border border-gray-200 p-4" open>
-        <summary class="font-semibold text-gray-700 cursor-pointer">What is GitTrend Tracker?</summary>
-        <p class="mt-3 text-gray-600">GitTrend Tracker is a free dashboard that shows you the most popular GitHub repositories that are trending right now. It uses the GitHub API to find repos gaining the most stars.</p>
-      </details>
+    <div class="space-y-8">
 
-      <details class="bg-white rounded-lg border border-gray-200 p-4">
-        <summary class="font-semibold text-gray-700 cursor-pointer">How do I filter by programming language?</summary>
-        <p class="mt-3 text-gray-600">Click on any language tab at the top of the dashboard (Python, JavaScript, TypeScript, Rust, Go, etc.) to see trending repos only in that language. Click "All" to see all languages.</p>
-      </details>
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h2 class="font-semibold text-gray-800 text-lg mb-3">How does GitHub trending work on GitTrend Tracker?</h2>
+        <p class="text-gray-600 leading-relaxed">GitTrend Tracker uses the GitHub REST API to search for repositories that have been actively pushed and are accumulating the most stars within the selected time window (daily, weekly, or monthly). Repositories are ranked by star acquisition rate within the chosen period, not by total all-time stars, which means genuinely rising projects are surfaced rather than established repositories that have been popular for years. This approach mirrors how developers organically discover exciting new projects on GitHub. The result is a feed that is always fresh, always relevant, and always reflecting real community momentum rather than historical legacy popularity. Changing your language or time range filter immediately issues a new query to surface the most relevant results for your specific interest.</p>
+      </div>
 
-      <details class="bg-white rounded-lg border border-gray-200 p-4">
-        <summary class="font-semibold text-gray-700 cursor-pointer">What do Daily, Weekly, and Monthly mean?</summary>
-        <p class="mt-3 text-gray-600">These time ranges control how far back the dashboard looks for trending activity. "Daily" shows repos with recent pushes in the last 24 hours, "Weekly" looks at the past 7 days, and "Monthly" covers the last 30 days.</p>
-      </details>
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h2 class="font-semibold text-gray-800 text-lg mb-3">What programming languages can I filter by?</h2>
+        <p class="text-gray-600 leading-relaxed">GitTrend Tracker currently supports filtering by the following programming languages: Python, JavaScript, TypeScript, Rust, Go, Java, C++, Ruby, PHP, Swift, and Kotlin. There is also an "All Languages" option that returns the most popular repositories across every language on GitHub. Clicking any language tab instantly refreshes the repository list to show only repos where that language is the primary language, as reported by GitHub's language detection system. This makes it easy to stay current within your specific technology stack without wading through unrelated results. Language support is determined by GitHub's own language classification, so repositories that use multiple languages are categorized by the language that makes up the largest proportion of their code.</p>
+      </div>
 
-      <details class="bg-white rounded-lg border border-gray-200 p-4">
-        <summary class="font-semibold text-gray-700 cursor-pointer">How often is the data updated?</summary>
-        <p class="mt-3 text-gray-600">Data is fetched from the GitHub API in real time. Results are cached locally for performance: daily data for 30 minutes, weekly data for 1 hour, and monthly data for 2 hours.</p>
-      </details>
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h2 class="font-semibold text-gray-800 text-lg mb-3">What is the difference between Daily, Weekly, and Monthly trending?</h2>
+        <p class="text-gray-600 leading-relaxed">The three time range options on GitTrend Tracker correspond to different discovery use cases. Daily trending surfaces repositories with the most new star activity in the past 24 hours and is ideal for catching breaking announcements, fresh releases, viral projects, and immediate community reactions. A repository with 2,000 stars acquired in a single day is more genuinely "trending" than one with 50,000 stars accumulated over five years. Weekly trending aggregates seven days of activity and is better for identifying projects with sustained momentum rather than one-day spikes. A project trending for seven consecutive days likely has real substance behind its popularity. Monthly trending shows repositories that have built significant traction over 30 days, which is the strongest signal that a project is entering the mainstream adoption phase of its lifecycle. For day-to-day discovery, daily trending is recommended. For evaluating whether to adopt a technology, weekly and monthly trending provide more reliable signals.</p>
+      </div>
 
-      <details class="bg-white rounded-lg border border-gray-200 p-4">
-        <summary class="font-semibold text-gray-700 cursor-pointer">Why do I see a rate limit warning?</summary>
-        <p class="mt-3 text-gray-600">GitHub limits the number of API requests. If you see a rate limit warning, cached data is being shown. Wait a few minutes and refresh, or the cache will automatically update.</p>
-      </details>
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h2 class="font-semibold text-gray-800 text-lg mb-3">What does the star count on a repository card mean?</h2>
+        <p class="text-gray-600 leading-relaxed">A GitHub star is a developer's way of bookmarking a repository, signaling appreciation, or marking something as worth remembering. When you star a repository, you are telling GitHub you find it interesting — and other developers can see that signal. Total star count is therefore a measure of cumulative community appreciation: a repository with 50,000 stars has been found valuable by tens of thousands of developers over time. However, total star count does not distinguish between an established project with years of stars and a new project that exploded in popularity recently. GitTrend Tracker shows both the total star count and a sparkline chart that visualizes recent star growth, giving you a more complete picture. A project with 1,000 total stars but a rapidly rising sparkline may be more worth investigating right now than a project with 100,000 stars but a flat growth curve.</p>
+      </div>
 
-      <details class="bg-white rounded-lg border border-gray-200 p-4">
-        <summary class="font-semibold text-gray-700 cursor-pointer">Is GitTrend Tracker free?</summary>
-        <p class="mt-3 text-gray-600">Yes, GitTrend Tracker is completely free to use. There are no accounts, subscriptions, or hidden fees.</p>
-      </details>
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h2 class="font-semibold text-gray-800 text-lg mb-3">How often is the repository data updated?</h2>
+        <p class="text-gray-600 leading-relaxed">GitTrend Tracker fetches fresh data from the GitHub REST API each time you visit the dashboard or change a filter setting. To stay within GitHub's API rate limits and provide fast load times, results are intelligently cached in your browser's localStorage. Daily trending results are cached for 30 minutes, weekly results for 1 hour, and monthly results for 2 hours. After the cache window expires, the next interaction automatically fetches fresh data from GitHub. A status bar at the top of the dashboard displays the exact timestamp of when the current data was last fetched, so you always know how fresh the information is. If you want to force a fresh fetch before the cache expires, clearing your browser's site data for GitTrend Tracker will accomplish this.</p>
+      </div>
 
-      <details class="bg-white rounded-lg border border-gray-200 p-4">
-        <summary class="font-semibold text-gray-700 cursor-pointer">What do the sparklines show?</summary>
-        <p class="mt-3 text-gray-600">The small line charts on each card represent the approximate star growth trend of the repository, helping you visualize whether a repo is steadily gaining popularity.</p>
-      </details>
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h2 class="font-semibold text-gray-800 text-lg mb-3">How can I use trending repository data for learning and skill development?</h2>
+        <p class="text-gray-600 leading-relaxed">Trending GitHub repositories are among the best learning resources available to software developers, and for good reason. Projects that are trending have typically been recognized by many experienced developers as worth looking at — which often means they have good README documentation, clear code organization, and thoughtful architecture. Reading the source code of trending projects exposes you to current best practices, modern idioms, and real-world solutions that no tutorial can fully replicate. Contributing to trending projects — even in small ways like fixing documentation, writing tests, or addressing beginner-friendly issues — is one of the highest-value activities for a developer building their portfolio. Your contributions become visible to a large, active community. For learners in a specific language, filtering GitTrend Tracker by that language and studying the top daily trending projects each morning is an effective habit for accelerating your growth and staying current with how experienced practitioners write code today.</p>
+      </div>
 
-      <details class="bg-white rounded-lg border border-gray-200 p-4">
-        <summary class="font-semibold text-gray-700 cursor-pointer">Can I change the language of the interface?</summary>
-        <p class="mt-3 text-gray-600">Yes! Use the language dropdown in the top right corner to switch between English, Korean, Japanese, Chinese, Spanish, French, German, and Portuguese. The interface auto-detects your browser language on first visit.</p>
-      </details>
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h2 class="font-semibold text-gray-800 text-lg mb-3">Why do I sometimes see a rate limit warning?</h2>
+        <p class="text-gray-600 leading-relaxed">GitHub limits unauthenticated API requests to 60 per hour per IP address. GitTrend Tracker's caching system is specifically designed to work well within this limit during normal browsing. However, if you are on a shared network (such as a company office, school, or public Wi-Fi), other users on the same public IP address may have already consumed part of the hourly quota. When the rate limit is reached, GitTrend Tracker automatically falls back to displaying cached data if available, with a visible warning that the data may not reflect the most recent state. The rate limit resets every hour on a rolling basis. In most cases, waiting five to fifteen minutes and refreshing the page will resolve the issue. Rate limit errors do not affect cached results already loaded in your browser session.</p>
+      </div>
 
-      <details class="bg-white rounded-lg border border-gray-200 p-4">
-        <summary class="font-semibold text-gray-700 cursor-pointer">How can I give feedback?</summary>
-        <p class="mt-3 text-gray-600">Email us at <a href="mailto:taeshinkim11@gmail.com" class="text-blue-600 hover:underline">taeshinkim11@gmail.com</a> with your feedback, suggestions, or bug reports.</p>
-      </details>
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h2 class="font-semibold text-gray-800 text-lg mb-3">What do the sparkline charts on each repository card show?</h2>
+        <p class="text-gray-600 leading-relaxed">The sparkline — the small line chart displayed at the bottom of each repository card — visualizes the repository's star growth trajectory over a recent period. This micro-chart provides a fast visual summary that complements the raw total star count number. A steeply ascending sparkline indicates the repository has been gaining stars rapidly and recently, often triggered by a major release, a viral tweet, a Hacker News front page appearance, or coverage in a popular newsletter. A flat sparkline means the project has stable but not explosive growth — which may still indicate excellent quality and reliability. A declining sparkline might suggest that peak viral attention has passed, though the project may still be fundamentally excellent. Use sparklines as a quick filter: when evaluating many repositories at once, sparklines help you immediately identify which ones are experiencing their moment of peak momentum.</p>
+      </div>
+
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h2 class="font-semibold text-gray-800 text-lg mb-3">Is GitTrend Tracker available on mobile devices?</h2>
+        <p class="text-gray-600 leading-relaxed">Yes, GitTrend Tracker is fully responsive and optimized for all screen sizes. On mobile phones, the repository grid collapses to a single-column layout so each card has enough space to display all metadata clearly without requiring you to pinch-zoom or scroll horizontally. Language filter tabs are horizontally scrollable on smaller screens, allowing you to swipe through all available language options without cluttering the screen. The time range toggle, status bar, and load more button are all appropriately sized for touch interaction. Social sharing links in the footer are also accessible on mobile. No native app installation is required — simply open gittrend-tracker.vercel.app in any modern mobile browser (Chrome, Safari, Firefox, Edge) for a full-featured experience on the go.</p>
+      </div>
+
+      <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h2 class="font-semibold text-gray-800 text-lg mb-3">Is GitTrend Tracker free? Are there any limitations or paid tiers?</h2>
+        <p class="text-gray-600 leading-relaxed">GitTrend Tracker is completely free to use. There is no registration, no subscription, no freemium tier, and no features locked behind a paywall. Every capability the platform offers — language filtering, time range selection, sparkline charts, repository metadata, multi-language interface, and the load more feature — is available to all visitors at no charge. The only operational limitation users may occasionally encounter is GitHub's API rate limit, which is an external constraint imposed by GitHub and is handled gracefully by the platform's caching system. GitTrend Tracker is supported by advertising through Google AdSense and Adsterra, which allows us to cover operating costs and continue improving the platform without ever charging users. We intend to keep GitTrend Tracker free indefinitely.</p>
+      </div>
+
     </div>
   </main>
 
@@ -88,7 +189,7 @@
         <a href="privacy.html" class="hover:text-blue-600">Privacy Policy</a>
         <a href="terms.html" class="hover:text-blue-600">Terms of Service</a>
       </div>
-      <p class="mt-3 text-xs text-gray-400">&copy; 2026 GitTrend Tracker</p>
+      <p class="mt-3 text-xs text-gray-400">&copy; 2026 GitTrend Tracker. All rights reserved.</p>
     </div>
   </footer>
 </body>

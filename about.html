@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - GitTrend Tracker</title>
-  <meta name="description" content="Learn about GitTrend Tracker, a free dashboard for discovering daily trending GitHub repositories.">
+  <title>About GitTrend Tracker - Discover Trending GitHub Repositories Daily</title>
+  <meta name="description" content="GitTrend Tracker is a free dashboard for discovering trending GitHub repositories. Learn how it works, who it's for, and why tracking GitHub trends keeps developers ahead of the curve.">
+  <meta name="keywords" content="about GitTrend Tracker, trending GitHub repos tool, GitHub trends dashboard, open source discovery, developer trending tools, popular repositories tracker">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://gittrend-tracker.vercel.app/about.html">
-  <meta property="og:title" content="About - GitTrend Tracker">
-  <meta property="og:description" content="Learn about GitTrend Tracker, a free dashboard for discovering daily trending GitHub repositories.">
+  <meta property="og:title" content="About GitTrend Tracker - Discover Trending GitHub Repositories Daily">
+  <meta property="og:description" content="Learn how GitTrend Tracker helps developers discover trending GitHub repositories filtered by language, time range, and star growth.">
   <meta property="og:url" content="https://gittrend-tracker.vercel.app/about.html">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GitTrend Tracker">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7098271335538021" crossorigin="anonymous"></script>
@@ -33,42 +38,78 @@
       <h1 class="text-3xl font-bold text-gray-800 mb-6">About GitTrend Tracker</h1>
 
       <section class="mb-8">
-        <h2 class="text-xl font-semibold text-gray-700 mb-3">What is GitTrend Tracker?</h2>
-        <p class="text-gray-600 leading-relaxed mb-4">GitTrend Tracker is a free, open dashboard that displays daily trending GitHub repositories sorted by stars. It helps developers quickly discover popular open-source projects across multiple programming languages.</p>
-        <p class="text-gray-600 leading-relaxed">Whether you are looking for the latest AI libraries, learning resources, developer tools, or emerging frameworks, GitTrend Tracker brings the most popular repositories right to your screen.</p>
+        <h2 class="text-xl font-semibold text-gray-700 mb-3">What Is GitTrend Tracker?</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">GitTrend Tracker is a free, real-time dashboard that surfaces the most popular and fastest-growing repositories on GitHub. It aggregates repository data from the GitHub REST API and presents it in a clean, searchable, filterable interface that makes it effortless to discover what the global developer community is building, using, and excited about right now.</p>
+        <p class="text-gray-600 leading-relaxed mb-4">Whether you are a software engineer looking for your next favorite library, a student hunting for learning projects in your language of choice, a tech lead evaluating emerging frameworks, or an open-source contributor looking for active projects to join, GitTrend Tracker gives you an instant, comprehensive view of the GitHub ecosystem's most dynamic activity.</p>
+        <p class="text-gray-600 leading-relaxed">The platform supports filtering by over a dozen popular programming languages, switching between daily, weekly, and monthly trending windows, and viewing repository details including star counts, fork counts, descriptions, and star growth sparklines — all in one place, with no account required.</p>
       </section>
 
       <section class="mb-8">
-        <h2 class="text-xl font-semibold text-gray-700 mb-3">Features</h2>
+        <h2 class="text-xl font-semibold text-gray-700 mb-3">Why Tracking GitHub Trends Matters for Developers</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">GitHub is the world's largest repository of open-source software, hosting over 420 million repositories and used by more than 100 million developers globally. Every day, thousands of new repositories are created, existing projects receive significant updates, and certain libraries and frameworks suddenly surge in popularity. Keeping pace with this activity is increasingly important — but it is also increasingly difficult without the right tools.</p>
+        <p class="text-gray-600 leading-relaxed mb-4">Trending repositories on GitHub are a reliable signal of what the developer community considers valuable, innovative, or worth paying attention to. A project that gains thousands of stars in a week is not just popular — it often reflects a genuine breakthrough in developer experience, a solution to a widely-felt pain point, or the emergence of a new programming paradigm. Missing these signals can mean falling behind in the tools you use, the libraries you evaluate, and the technologies you invest in learning.</p>
+        <p class="text-gray-600 leading-relaxed mb-4">GitTrend Tracker translates the vast, noisy activity of GitHub into actionable discovery. Instead of spending time browsing GitHub's explore page, following dozens of developers on social media, or scanning newsletters, you can visit GitTrend Tracker once a day and immediately see what is worth investigating. This efficiency compounds: developers who consistently stay current with trending tools tend to make better technical decisions, write more modern code, and bring more value to their teams.</p>
+        <p class="text-gray-600 leading-relaxed">For engineering managers and CTOs, trending repository data is also a window into the technology adoption curve. Projects that trend consistently over weeks often graduate from experimental to production-ready, and recognizing this trajectory early can give your organization a competitive edge in adopting new tooling before it becomes industry standard.</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-3">Key Features Explained in Detail</h2>
+
+        <h3 class="text-lg font-semibold text-gray-700 mb-2 mt-5">Language Filter Tabs</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">GitTrend Tracker supports filtering trending repositories by programming language. Available language filters include Python, JavaScript, TypeScript, Rust, Go, Java, C++, Ruby, PHP, Swift, Kotlin, and an "All Languages" option to view the most popular repositories across the entire GitHub ecosystem. When you select a language, the dashboard instantly reloads with repositories written primarily in that language, making it trivial to stay up-to-date within your specific technology stack. Your language preference is remembered during your session for a frictionless browsing experience.</p>
+
+        <h3 class="text-lg font-semibold text-gray-700 mb-2 mt-5">Time Range Toggle: Daily, Weekly, Monthly</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Trend analysis means different things over different time horizons, and GitTrend Tracker lets you control the window. Daily trending surfaces repositories that have received the most new stars and activity in the past 24 hours — ideal for catching breaking announcements, viral projects, and fresh releases. Weekly trending aggregates activity over seven days, revealing projects with sustained momentum rather than one-day spikes. Monthly trending provides the broadest view, showing repositories that have built significant community traction over 30 days and are likely graduating from niche interest to mainstream adoption.</p>
+
+        <h3 class="text-lg font-semibold text-gray-700 mb-2 mt-5">Repository Cards with Rich Metadata</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">Each repository is displayed as a detailed card showing the repository owner's avatar, the full repository name with a direct link to GitHub, a clear description of what the project does, the primary programming language, total star count, and fork count. A sparkline chart on each card visualizes the repository's star growth trajectory, giving you an immediate visual sense of whether a project is experiencing a sudden spike or consistent growth. Cards are designed for scannability — you can evaluate a repository at a glance and decide whether to click through for deeper investigation.</p>
+
+        <h3 class="text-lg font-semibold text-gray-700 mb-2 mt-5">Smart Caching for Speed and API Efficiency</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">GitHub's public API has rate limits that restrict how many requests can be made per hour without authentication. GitTrend Tracker uses intelligent client-side caching to store results locally in your browser, reducing API calls and ensuring fast page loads. Daily data is cached for 30 minutes, weekly data for one hour, and monthly data for two hours. This means the dashboard loads near-instantly on repeat visits within the cache window, and you are never left staring at a loading spinner unnecessarily.</p>
+
+        <h3 class="text-lg font-semibold text-gray-700 mb-2 mt-5">Multi-Language Interface</h3>
+        <p class="text-gray-600 leading-relaxed mb-4">GitTrend Tracker serves developers worldwide and the interface is available in eight languages: English, Korean, Japanese, Chinese, Spanish, French, German, and Portuguese. The interface auto-detects your browser's language on first visit and switches automatically. You can also manually select your preferred language using the dropdown in the top navigation bar at any time. Your choice is remembered for future visits.</p>
+
+        <h3 class="text-lg font-semibold text-gray-700 mb-2 mt-5">Load More Pagination</h3>
+        <p class="text-gray-600 leading-relaxed">The initial view displays the top repositories matching your filters. A "Load More" button allows you to progressively load additional results without navigating away from the page, keeping your scroll position intact and your browsing experience smooth.</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-3">Who Is GitTrend Tracker For?</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">GitTrend Tracker serves a diverse audience united by an interest in the open-source software ecosystem:</p>
         <ul class="list-disc list-inside text-gray-600 space-y-2">
-          <li>Browse trending repositories from GitHub, updated in real time</li>
-          <li>Filter by programming language: Python, JavaScript, TypeScript, Rust, Go, Java, C++, Ruby, PHP, Swift, Kotlin</li>
-          <li>Toggle between daily, weekly, and monthly trending periods</li>
-          <li>View key metrics: stars, forks, descriptions, and star history sparklines</li>
-          <li>Fully responsive design that works on desktop, tablet, and mobile</li>
-          <li>Available in 8 languages: English, Korean, Japanese, Chinese, Spanish, French, German, Portuguese</li>
+          <li><strong>Software engineers and developers</strong> who want to discover high-quality libraries, tools, and frameworks gaining traction in their ecosystem before they become ubiquitous.</li>
+          <li><strong>Open-source contributors</strong> who are looking for active, popular projects to contribute to, where their contributions will have visible impact and community engagement.</li>
+          <li><strong>Students and bootcamp graduates</strong> who want to discover well-maintained projects they can learn from, study, and use as references for their own development.</li>
+          <li><strong>Engineering managers and CTOs</strong> who want to monitor technology adoption trends to inform tooling decisions, developer hiring priorities, and technology roadmaps.</li>
+          <li><strong>Tech recruiters</strong> who want to understand which skills and technologies are gaining momentum in the developer community.</li>
+          <li><strong>Journalists, bloggers, and content creators</strong> in the tech space who need to stay current with the most exciting developments in open-source software.</li>
+          <li><strong>Investors and analysts</strong> tracking the health and direction of the open-source ecosystem as an indicator of technology trends.</li>
         </ul>
       </section>
 
       <section class="mb-8">
-        <h2 class="text-xl font-semibold text-gray-700 mb-3">How It Works</h2>
-        <p class="text-gray-600 leading-relaxed">GitTrend Tracker uses the GitHub REST API to search for repositories that have been recently pushed and are gaining stars. Results are cached locally to minimize API usage and provide a fast experience.</p>
+        <h2 class="text-xl font-semibold text-gray-700 mb-3">How GitHub Trends Reflect Developer Community Interests</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">A GitHub star is a developer's way of bookmarking a project, expressing appreciation, or signaling that something is worth remembering. When many developers star the same repository in a short period, it almost always reflects genuine, organic interest rather than manufactured attention. This makes the star-count signal uniquely credible compared to social media engagement metrics, which are more easily gamed.</p>
+        <p class="text-gray-600 leading-relaxed mb-4">Historically, GitHub trending repositories have been among the first signals of major technology shifts. Projects like React, Vue.js, Docker, Kubernetes, TensorFlow, and Rust each experienced explosive trending growth on GitHub well before they became industry standards. Early visibility into these trends allowed developers and organizations that acted on them to gain significant advantages in adoption, talent acquisition, and technical capability.</p>
+        <p class="text-gray-600 leading-relaxed">GitTrend Tracker is your window into this signal stream, presented in a format that makes the most important information immediately visible without requiring you to dig through GitHub's search interface or wait for word-of-mouth discovery.</p>
       </section>
 
       <section class="mb-8">
-        <h2 class="text-xl font-semibold text-gray-700 mb-3">Who Is This For?</h2>
-        <ul class="list-disc list-inside text-gray-600 space-y-2">
-          <li>Software developers looking for popular libraries and tools</li>
-          <li>Open-source contributors seeking projects to contribute to</li>
-          <li>Tech enthusiasts tracking developer trends</li>
-          <li>Students discovering learning resources</li>
-          <li>CTOs and tech leads evaluating emerging technologies</li>
-        </ul>
+        <h2 class="text-xl font-semibold text-gray-700 mb-3">How the Data Is Sourced</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">GitTrend Tracker uses the GitHub REST API to search for repositories that have been actively developed and are accumulating stars within the selected time window. Queries are constructed with date filters and sort parameters that surface genuinely trending content rather than simply the most starred repositories of all time. The sparkline data for each repository is estimated from the star history, providing a visual representation of growth trajectory.</p>
+        <p class="text-gray-600 leading-relaxed">GitTrend Tracker is an independent tool and is not affiliated with, endorsed by, or officially partnered with GitHub or Microsoft. All data accessed via the GitHub API is public information governed by GitHub's Terms of Service and API usage policies.</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold text-gray-700 mb-3">Our Mission</h2>
+        <p class="text-gray-600 leading-relaxed mb-4">Our mission is to make the GitHub developer ecosystem more discoverable and navigable for every developer, regardless of experience level or background. Open-source software has transformed the world, and the communities building it deserve tools that make their work more visible and more accessible. GitTrend Tracker is our contribution to that goal: a free, fast, beautiful interface for exploring the leading edge of software development every single day.</p>
+        <p class="text-gray-600 leading-relaxed">The platform is supported by advertising from Google AdSense and Adsterra, which allows us to maintain and improve the service at no cost to our users. We are committed to keeping GitTrend Tracker free and open to everyone.</p>
       </section>
 
       <section>
-        <h2 class="text-xl font-semibold text-gray-700 mb-3">Contact</h2>
-        <p class="text-gray-600">Have feedback or suggestions? Email us at <a href="mailto:taeshinkim11@gmail.com" class="text-blue-600 hover:underline">taeshinkim11@gmail.com</a>.</p>
+        <h2 class="text-xl font-semibold text-gray-700 mb-3">Contact Us</h2>
+        <p class="text-gray-600 leading-relaxed">We welcome your feedback, feature requests, and bug reports. Reach us at <a href="mailto:taeshinkim11@gmail.com" class="text-blue-600 hover:underline">taeshinkim11@gmail.com</a>. We read every message and use your input to shape the future of the platform.</p>
       </section>
     </article>
   </main>
@@ -82,7 +123,7 @@
         <a href="privacy.html" class="hover:text-blue-600">Privacy Policy</a>
         <a href="terms.html" class="hover:text-blue-600">Terms of Service</a>
       </div>
-      <p class="mt-3 text-xs text-gray-400">&copy; 2026 GitTrend Tracker</p>
+      <p class="mt-3 text-xs text-gray-400">&copy; 2026 GitTrend Tracker. All rights reserved.</p>
     </div>
   </footer>
 </body>
